@@ -1,0 +1,23 @@
+{
+	"name": "ds_daily",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_storage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "all_days_raw.json",
+				"folderPath": {
+					"value": "@{formatDateTime(addDays(utcNow(),-1),'yyyy-MM-dd')}",
+					"type": "Expression"
+				},
+				"fileSystem": "bronze-layer"
+			}
+		},
+		"schema": {}
+	}
+}

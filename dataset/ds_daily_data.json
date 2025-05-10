@@ -1,0 +1,23 @@
+{
+	"name": "ds_daily_data",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_restapi",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"url_path": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": {
+				"value": "@dataset().url_path",
+				"type": "Expression"
+			}
+		},
+		"schema": []
+	}
+}
