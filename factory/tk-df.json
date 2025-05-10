@@ -1,0 +1,9 @@
+{
+	"name": "tk-df",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c340de92-c6a2-43db-aa03-99349283795f",
+		"tenantId": "abf31878-854d-45e5-aab3-7b1d9e22e181"
+	}
+}
